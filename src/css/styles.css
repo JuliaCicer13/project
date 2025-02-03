@@ -4,16 +4,22 @@ Width:
 1440px;
 Height:
 900px;
+position: relative; /* Устанавливаем позицию для секции */
 
+    padding: 0; /* Убираем лишние внутренние отступы */
+
+    display: flex; /* Делаем flex-контейнер */
+    align-items: flex-end; /* Прижимаем содержимое вниз */
+    justify-content: flex-end; /* Прижимаем содержимое вправо */
 }
 
 
 .main-title {
+
 Width:
 1084px;
 Height:
 270px;
-padding-top: 300px;
 text-align: center;
 font-size: 90px;
 line-height: 90px;
@@ -21,8 +27,8 @@ align-items: center;
 }
 
 .list-link {
-  position: absolute;
-
+margin-right: 50px;
+position: absolute;
 display: flex;
 list-style: none;
 bottom: 0;
@@ -51,7 +57,16 @@ right: 0;
   text-decoration: none;
 }
 
+
+.second-wrap{
+padding-top: 40px;
+
+
+
+}
+
 .link-big{
+  margin-left: 34px;
   border: solid 1px;
   Width: 223px;
   Height: 55px;
@@ -59,6 +74,10 @@ right: 0;
   60px;
   Padding
   :18px 24px 18px 24px;
-
+  text-align: center;
+  margin: 0 auto;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
 }
 
