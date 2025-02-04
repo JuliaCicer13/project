@@ -9,13 +9,24 @@ position: relative; /* Устанавливаем позицию для секц
     padding: 0; /* Убираем лишние внутренние отступы */
 
     display: flex; /* Делаем flex-контейнер */
-    align-items: flex-end; /* Прижимаем содержимое вниз */
-    justify-content: flex-end; /* Прижимаем содержимое вправо */
+    align-items: center; /* Прижимаем содержимое вниз */
+    justify-content: center; /* Прижимаем содержимое вправо */
 }
 
 
 .main-title {
-
+  Widt
+  h
+  1084px
+  Heigh
+  t
+  270px
+  To
+  p
+  300px
+  Lef
+  t
+  178px
 Width:
 1084px;
 Height:
@@ -49,12 +60,17 @@ right: 0;
 
 }
 
-.link {
+.link-wrap a {
+  Width:
+15px;
+Height:
+19px;
   text-align: center;
   margin: 0 auto;
   font-weight: 500;
   font-size: 16px;
   text-decoration: none;
+  color: aliceblue;
 }
 
 
