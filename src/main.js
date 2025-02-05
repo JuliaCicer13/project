@@ -1,1 +1,1 @@
-import './css/styles.css'
+import { createMarkUp } from "./js/hero";
