@@ -1,5 +1,5 @@
 .hero {
-background-image: url(../img/Hero\ \(3\).png);
+background-image: url(../img/orange.png);
 Width:
 1440px;
 Height:
@@ -24,6 +24,7 @@ line-height: 90px;
 align-items: center;
 text-transform: uppercase;
 font-weight: 500;
+color: #FAFAFA;
 }
 
 .list-link {
