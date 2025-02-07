@@ -166,15 +166,32 @@ header {
 
     .list-text {
         list-style: none;
-        padding: 230px 152px 390px 120px;
+        padding: 230px 152px 190px 120px;
 
 
     }
 
     .text-menu {
-        Gap: 12px;
+        margin-bottom: 5px;
         color: #FAFAFA;
         text-decoration: underline;
         cursor: pointer;
     }
+
+.menu-order-button{
+    margin-left: 50px;
+    position: relative;
+    display: block;
+    white-space: nowrap;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 60px;
+    padding: 18px 24px 18px 24px;
+    width: 187px;
+    height: 55px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #FAFAFA;
+    background-color: #ED3B44;
+
+}
 }

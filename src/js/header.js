@@ -58,24 +58,26 @@ menuContainer.addEventListener('click', onclickMenuBtn);
 
 
 // Open burger-modal wibdow
-const burger = document.querySelector('.burger-whipe');
-const menu = document.querySelector('.menu');
 
+    document.addEventListener("DOMContentLoaded", () => {
+    const burger = document.querySelector(".burger-whipe a"); // Берем саму ссылку внутри бургера
+    const menu = document.querySelector(".menu");
+    const closeBtn = document.querySelector(".close-btn");
 
-burger.addEventListener('click', handleOpenBtn);
+    if (!burger || !menu || !closeBtn) {
+        console.error("Не найден один из элементов меню!");
+        return;
+    }
 
-function handleOpenBtn(event) {
-    event.preventDefault();
-    if (menu.style.display === "none" || menu.style.display === "") {
+    function openMenu(event) {
+        event.preventDefault(); // Останавливаем переход по ссылке
         menu.style.display = "block";
+    }
 
-    } else {
+    function closeMenu() {
         menu.style.display = "none";
     }
-    
-}
 
-function closeMenu() {
-    menu.style.display = "none";
-
-}
+    burger.addEventListener("click", openMenu);
+    closeBtn.addEventListener("click", closeMenu);
+});
