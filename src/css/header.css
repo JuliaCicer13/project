@@ -1,0 +1,186 @@
+header{
+    position: absolute;
+    z-index: 20;
+    display: flex;
+    background: none;
+    width: 100%;
+    justify-content: center;
+}
+
+
+/* @media screen and (min-width: 1200px) {
+    .container {
+      width: 1200px;
+    }
+  } */
+
+.logo-container{
+    display: flex;
+}
+.menu-button{
+    background: none;
+    border: none;
+    padding: 0;
+    margin-top: 10px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 487px;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #fafafa;
+}
+
+
+.menu-button:hover, .menu-button:focus{
+    color: #ed3b44;
+}
+
+.menu-div{
+height: 10px;
+flex-direction: column;
+text-align: center;
+}
+
+.img-logo{
+    margin-right: 8px;
+    border-radius: 18px;
+    width: 80px;
+    height: 80px;
+}
+
+.logo-name{
+    margin: 0;
+    color: #FAFAFA;
+}
+
+.header-div{
+    margin-top: 32px;
+    width: 1376px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-right: 43px;
+ 
+  
+}
+
+.ankors-menu{
+    margin-top: 16px;
+    white-space: nowrap;
+    padding: 0;
+    width: auto;
+    list-style: none;
+    color: #FAFAFA;;
+}
+
+
+.acnkorLink{
+    margin-top: 5px;
+}
+
+.acnkorLink:hover, .acnkorLink:focus{
+    color: #ed3b44;
+    cursor: pointer
+}
+
+
+.is-hidden{
+    opacity: 0;
+    pointer-events: none;
+    overflow: hidden;
+    pointer-events: none;   
+    visibility: hidden;
+  }
+
+ .order-button{
+    white-space: nowrap;
+    background: none;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 60px;
+    padding: 18px 24px 18px 24px;
+    width: 187px;
+    height: 55px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #FAFAFA;
+    background-color: #ED3B44;
+ } 
+
+ .order-button:hover, .order-button:focus{
+    background: #E0373F;
+ }
+
+ /* mobile version */
+
+
+ @media(max-width: 375px) {
+
+.order-button {
+  display: none;
+
+}
+
+.header-div {
+    margin-top: 32px;
+    width: 343px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-right: 16px;
+    margin-left: 16px;
+
+
+}
+
+.menu-button {
+    display: none;
+}
+
+
+
+.burger-whipe {
+    display: block;
+    cursor: pointer;
+}
+
+.menu{
+ background-image: url(../img/orange.png) ;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color:  rgba(0, 0, 0, 0.8);
+z-index: 1000;
+justify-content: center;
+align-items: center;
+
+}
+.close-btn{
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    cursor: pointer;
+
+}
+
+.list-text{
+    list-style: none;
+    padding: 230px 152px 390px 120px;
+   
+    
+}
+
+.text-menu{
+Gap: 12px;
+color: #FAFAFA;
+text-decoration: underline;
+cursor: pointer;
+}
+ }

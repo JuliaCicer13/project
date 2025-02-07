@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/project/",
+    "build": "vite build --base=/project-K3n5t13n/",
     "preview": "vite preview"
   },
   "devDependencies": {
@@ -17,8 +17,8 @@
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "sass": "^1.83.4",
-    "simplelightbox": "^2.14.3",
+    "accordion-js": "^3.4.0",
+    "swiper": "^11.2.2",
     "vite-plugin-full-reload": "^1.2.0",
     "vite-plugin-html-inject": "^1.1.2"
   }
