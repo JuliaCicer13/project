@@ -1,29 +1,19 @@
 .hero {
     background-image: url(../img/imgJPEG/heroImg/orange.png);
-    Width:
-        1440px;
-    Height:
-        900px;
+    width: 1440px;
+    height: 900px;
     position: relative;
-    /* Устанавливаем позицию для секции */
-
     padding: 0;
-    /* Убираем лишние внутренние отступы */
-
     display: flex;
-    /* Делаем flex-контейнер */
     align-items: center;
-    /* Прижимаем содержимое вниз */
     justify-content: center;
-    /* Прижимаем содержимое вправо */
+
 }
 
 
 .main-title {
-    Width:
-        1084px;
-    Height:
-        270px;
+    width: 1084px;
+    height: 270px;
     font-size: 90px;
     line-height: 90px;
     align-items: center;
@@ -43,7 +33,7 @@
 
 
 .link-wrap {
-    Width: 55px;
+    width: 55px;
     Height: 45px;
     border: solid 1px;
     border-color: aliceblue;
@@ -56,10 +46,8 @@
 }
 
 .link-wrap a {
-    Width:
-        55px;
-    Height:
-        55px;
+    width: 55px;
+    height: 55px;
     text-align: center;
     margin: 0 auto;
     font-weight: 500;
@@ -103,25 +91,24 @@ box-shadow: 0 0 10px rgba (255, 255, 255, 0.3);
 @media (max-width: 1024px) {
 
     .hero {
-        Width: 768px;
-        Height: 1024px;
+        width: 768px;
+        height: 1024px;
         padding: 20px;
     }
 
     .main-title {
-        Width: 632px;
-        Height: 450px;
+        width: 632px;
+        height: 450px;
     }
 
     .list-link {
         bottom: 20px;
-        right: 20px;
+   
         gap: 5px;
 
     }
 
     .link-wrap {
-        padding: 15px 11px 8px 10px;
         font-size: 14px;
         font-size: 19px;
     }
@@ -143,8 +130,8 @@ box-shadow: 0 0 10px rgba (255, 255, 255, 0.3);
 
 @media (max-width: 767px) {
     .hero {
-        Width: 375px;
-        Height: 812px;
+        width: 375px;
+        height: 812px;
         padding: 15px;
         /* Добавляем небольшие отступы */
         display: flex;
@@ -155,7 +142,7 @@ box-shadow: 0 0 10px rgba (255, 255, 255, 0.3);
     }
 
     .main-title {
-        Width: 343px;
+        width: 343px;
         font-weight: 500;
         Top: 281px;
         Left: 16px;
@@ -191,7 +178,7 @@ box-shadow: 0 0 10px rgba (255, 255, 255, 0.3);
         Height: 30px;
         border-radius:
             60px;
-        Padding: 10px 12px 8px 7px;
+        Padding: 10px 12px 5px 7px;
         Gap:
             10px;
         text-align: center;
