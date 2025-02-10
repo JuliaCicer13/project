@@ -29,12 +29,12 @@
     list-style: none;
     bottom: 0;
     right: 0;
+    margin-bottom: 32px;
 }
 
 
 .link-wrap {
     width: 55px;
-    Height: 45px;
     border: solid 1px;
     border-color: aliceblue;
     border-radius: 50%;
@@ -43,6 +43,12 @@
     padding: 17px 8px 6px 8px;
 
 
+}
+
+.link-wrap:hover{
+    border-color: blue;
+    transition: 0.3s ease-in-out;
+    
 }
 
 .link-wrap a {
@@ -97,8 +103,8 @@ box-shadow: 0 0 10px rgba (255, 255, 255, 0.3);
     }
 
     .main-title {
-        width: 632px;
-        height: 450px;
+        Width: 632px;
+        Height: 450px;
     }
 
     .list-link {
@@ -109,6 +115,7 @@ box-shadow: 0 0 10px rgba (255, 255, 255, 0.3);
     }
 
     .link-wrap {
+        padding: 15px 11px 8px 10px;
         font-size: 14px;
         font-size: 19px;
     }
