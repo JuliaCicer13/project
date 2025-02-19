@@ -10,7 +10,6 @@ document.querySelectorAll('.container-button, .container-button-next').forEach(b
 
       
         if (!isOpen) {
-            content.style.display = 'block';
             this.setAttribute('aria-expanded', 'true');
         }
     });
@@ -18,20 +17,16 @@ document.querySelectorAll('.container-button, .container-button-next').forEach(b
 
 
 const swiper = new Swiper('.swiper-container', {
-    slidesPerView: 6,
+    slidesPerView: 5,
     spaceBetween: 0,
     loop: true,
-    looperSlides: 20,
+    loopedSlides: 10,
     navigation: {
         nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        prevEl: null,
     },
     keyboard: {
         enabled: true,
     },
 });
 
-const nextButton = document.querySelector('.swiper-button-next');
-nextButton.addEventListener('click', function() {
-    swiper.slideNext(); 
-});
