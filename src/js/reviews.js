@@ -1,15 +1,5 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const prevButton = document.querySelector('.button-round');
-    const nextButton = document.querySelector('.button-round-second');
-
-    
-    if (!prevButton || !nextButton) {
-        console.error("Navigation buttons not found!");
-        return;
-    }
-
-    const swiper = new Swiper('.container-reviews', {
-        slidesPerView: 3,
+    const swipe = new Swiper('.container-reviews', {
+        slidesPerView: 4,
         spaceBetween: 16,
         loop: false, 
         navigation: {
@@ -31,11 +21,4 @@ document.addEventListener("DOMContentLoaded", function () {
         },
     });
 
-    
-    setTimeout(() => {
-        if (swiper) {
-            prevButton.disabled = swiper.isBeginning;
-            nextButton.disabled = swiper.isEnd;
-        }
-    }, 100);
-});
+   
