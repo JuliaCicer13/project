@@ -4,7 +4,6 @@
         loop: true,
         navigation: {
             nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
         },
         keyboard: {
             enabled: true,
@@ -15,8 +14,9 @@
     const buttons = document.querySelectorAll('.container-button-next'); 
 
     buttons.forEach(button => {
-        button.addEventListener('click', function () { 
-            const textBlock = document.querySelector('target-text'); 
+        button.addEventListener('click', function (event) { 
+            event.preventDefault();
+            const textBlock = document.querySelector('.target-text'); 
 
             if (textBlock.classList.contains('hidden')) { 
                 textBlock.classList.remove('hidden'); 
@@ -25,6 +25,7 @@
                 textBlock.classList.remove('visible'); 
                 textBlock.classList.add('hidden'); 
             }
+            console.log('Button clicked')
         });
     });
 });
