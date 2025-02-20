@@ -1,4 +1,3 @@
-document.addEventListener('DOMContentLoaded', function () {
     const swiper = new Swiper('.swiper-container', {
         slidesPerView: 5,
         spaceBetween: 0,
@@ -12,16 +11,22 @@ document.addEventListener('DOMContentLoaded', function () {
         },
     });
 
-    const button = document.querySelector('.button');
-    const content = document.querySelector('.target-text');
+   document.addEventListener('DOMContentLoaded', function () {
+    const buttons = document.querySelectorAll('.container-button-next'); 
 
-    
-    button.addEventListener('click', togleFunction);
-    function togleFunction(event) {
-        event.preventDefault(); 
- 
-        content.classList.toggle('vissible');
-       
-     }          
+    buttons.forEach(button => {
+        button.addEventListener('click', function () { 
+            const textBlock = document.querySelector('target-text'); 
+
+            if (textBlock.classList.contains('hidden')) { 
+                textBlock.classList.remove('hidden'); 
+                textBlock.classList.add('visible'); 
+            } else { 
+                textBlock.classList.remove('visible'); 
+                textBlock.classList.add('hidden'); 
+            }
+        });
+    });
 });
+
 
