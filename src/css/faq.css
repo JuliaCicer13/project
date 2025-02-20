@@ -1,3 +1,7 @@
 .faq{
-    background-color: teal;
+    width: 1520px;
+    height: 675px;
+    align-items: center;
+    margin: 0 auto;
+    background-color: #1C1D20;
 }
