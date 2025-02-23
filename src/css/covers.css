@@ -1,9 +1,17 @@
-.covers{
+.cover-section{
     position: relative;
-    background-image: url(../img/imgJPEG/coversImg/coversImg7.jpg);
-    background-repeat: no-repeat;
-    background-position: 0px;
+    background: linear-gradient(to right,
+    rgba(100, 0, 0, 0.5) 100px,
+    rgba(100 0, 0, 0.5) 100px),
+    repeating-linear-gradient(90deg,
+    rgba(225, 0, 0, 0.5) 100px,
+    rgba(255, 0, 0, 0.5) 160px,
+    rgba(0, 0, 0, 0) 100px,
+    rgba(0, 0, 0, 0) 160px),
+    url(../img/imgJPEG/heroImg/redage.png);
     background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
     width: 1520px;
     height: 675px;
     align-items: center;
@@ -13,7 +21,22 @@
     overflow: hidden;
   
 } 
+.cover-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.cover {
+    position: absolute;
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.5s ease-in-out;
+}
 
+.cover {
+    animation: float 5s infinite ease-in-out;
+}
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -37,16 +60,21 @@
     justify-content: center;
     overflow: hidden;
 }
+.cover-1 { top: 10%; left: 10%; transform: rotate(-10deg); }
+.cover-2 { top: 20%; left: 40%; transform: rotate(5deg); }
+.cover-3 { top: 30%; left: 70%; transform: rotate(-15deg); }
+.cover-4 { top: 50%; left: 15%; transform: rotate(10deg); }
+.cover-5 { top: 60%; left: 50%; transform: rotate(-5deg); }
+.cover-6 { top: 10%; left: 75%; transform: rotate(8deg); }
+.cover-7 { top: 70%; left: 80%; transform: rotate(-12deg); }
+.cover-8 { top: 40%; left: 5%; transform: rotate(7deg); }
+.cover-9 { top: 80%; left: 30%; transform: rotate(-8deg); }
+.cover-10 { top: 90%; left: 60%; transform: rotate(6deg); }
 
-.covers-list li img {
-    width: 544px;
-    height: auto;
-}
-
-
-@keyframes scrollCovers {
-    0% { transform: translateY(100%); }
-    100% { transform: translateX(-100%); }
+@keyframes float {
+    0% { transform: translateY(0px) rotate(var(--rotate)); }
+    50% { transform: translateY(-10px) rotate(var(--rotate)); }
+    100% { transform: translateY(0px) rotate(var(--rotate)); }
 }
 
 .animate-covers {
