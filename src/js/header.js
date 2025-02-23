@@ -1,83 +1,52 @@
-import logoImg from '../img/imgJPEG/logoImg/logoImg-min.jpg'
+document.addEventListener("DOMContentLoaded", () => {
+    const logoContainer = document.querySelector('.logo-container-header'); // Правильный селектор
+    const ankorList = document.querySelector('.ankors-menu');
+    const menuContainer = document.querySelector('.menu-div');
 
-const logoContainer = document.querySelector('.logo-container');
-const ankorList = document.querySelector('.ankors-menu');
-const menuButton = document.querySelector('.menu-button');
-const menuContainer = document.querySelector('.menu-div');
+    // Проверка существования элемента
+    if (!logoContainer) {
+        console.error("Элемент с классом '.logo-container-header' не найден!");
+        return; // Выход из функции, если элемент не найден
+    }
 
-const ankorArr = ['About me','Benefits','Projects','FAQ'];
+    const ankorArr = ['About me', 'Benefits', 'Projects', 'FAQ'];
 
+    // Создание анкоров
+    const createAnkor = str => `
+        <li class='acnkorLink'>
+            <a href='#'>${str}</a>
+        </li>
+    `;
 
-const createImg = (imgDirect,className)=>{
-    const img = document.createElement('img');
-    img.src = imgDirect;  
-    img.classList.add(className);
-    return img
-}
+    const createAnkorTemplate = arr => arr.map(el => createAnkor(el)).join('');
+    const addAnkorTemplate = template => ankorList.insertAdjacentHTML('beforeend', template);
 
-;
-const addImg = (elemForImg, img)=>{
-    elemForImg.prepend(img);
+    addAnkorTemplate(createAnkorTemplate(ankorArr));
 
-}
-addImg(logoContainer,createImg(logoImg,'img-logo'));
+    const toggleClass = (elem, className) => elem.classList.toggle(className);
 
+    const onclickMenuBtn = () => {
+        toggleClass(ankorList, 'is-hidden');
+    };
 
-const createAnkor = str =>{
-    return`
-    <li class='acnkorLink'>
-    <a href='#'>${str}<a/
-    <li/>
-    `
-};
+    menuContainer.addEventListener('click', onclickMenuBtn);
 
-const createAnkorTemplate = arr => arr.map(el=>createAnkor(el)).join('');
-
-const addAnkorTemplate = template => ankorList.insertAdjacentHTML('beforeend', template);
-
-const addClass = function(elem, className){
-    return elem.classList.add(className);
-};
-
-const removeClass = function(elem, className){
-    return elem.classList.remove(className);
-};
-
-
-const toggleClass = function(elem, className){
-    return elem.classList.toggle(className);
-};
-addAnkorTemplate(createAnkorTemplate(ankorArr));
-
-const onclickMenuBtn = (e) =>{
-    toggleClass(ankorList,'is-hidden');
-    
-}
-
-menuContainer.addEventListener('click', onclickMenuBtn);
-
-
-// Open burger-modal wibdow
-
-    document.addEventListener("DOMContentLoaded", () => {
-    const burger = document.querySelector(".burger-whipe a"); // Берем саму ссылку внутри бургера
+    // Открытие и закрытие меню бургера
+    const burger = document.querySelector(".burger-whipe a");
     const menu = document.querySelector(".menu");
     const closeBtn = document.querySelector(".close-btn");
 
-    if (!burger || !menu || !closeBtn) {
+    if (!burger || !menu  || !closeBtn) {
         console.error("Не найден один из элементов меню!");
         return;
     }
 
-    function openMenu(event) {
-        event.preventDefault(); // Останавливаем переход по ссылке
+    burger.addEventListener("click", event => {
+        event.preventDefault();
         menu.style.display = "block";
-    }
+    });
 
-    function closeMenu() {
+    closeBtn.addEventListener("click", () => {
         menu.style.display = "none";
-    }
-
-    burger.addEventListener("click", openMenu);
-    closeBtn.addEventListener("click", closeMenu);
+    });
 });

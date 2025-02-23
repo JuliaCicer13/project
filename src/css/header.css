@@ -14,7 +14,7 @@ margin-right: 32px;
 
 }
 
-.logo-container {
+.logo-container-header {
     display: flex;
 }
 
@@ -47,16 +47,20 @@ margin-right: 32px;
     text-align: center;
 }
 
-.img-logo {
-    margin-right: 8px;
-    border-radius: 18px;
+.img-logo-header {
     width: 80px;
     height: 80px;
+    border: none;
+    border-radius: 19px;
+    display: flex;
+    margin-right: 8px;
 }
-
 .logo-name {
     margin: 0;
     color: #FAFAFA;
+    width: 84px;
+    height: 19px;
+    font-size: 20px;
 }
 
 .header-div {

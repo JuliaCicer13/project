@@ -1,6 +1,7 @@
 <footer id="work-together" class="footer">
     <div class="container-logo">
-        <h2 class="title-footer"> <img class="img-logo" src="../img/imgJPEG/logoImg/logoImg-min.jpg" alt="logo"> let`s <span
+        <img class="img-logo" src="../img/imgJPEG/logoImg/logoImg-min.jpg" alt="logo">
+        <h2 class="title-footer"> let`s <span
                 class="span-footer">work</span>
             <br>together
         </h2>
@@ -8,13 +9,20 @@
     <div class="main-footer-container">
         <div class="container-form">
             <form action="submit.php" method="post">
-                <label for="email">clients@gmail.com</label>
-                <input type="email" id="email" name="email" required>
-        
-                <label for="comment">comments</label>
-                <textarea id="comment" name="comment" rows="4" required></textarea>
-        
+                <div class="container-label">
+                    <div class="wrap-label">
+                        <label class="label-footer" for="email">clients@gmail.com</label>
+                        <input class="input-email" type="email" id="email" name="email" required>
+                    </div>
+                    
+                  <div class="wrap-comment">
+                    <label class="label-comment" for="comment">comments</label>
+                    <textarea class="textarea" id="comment" name="comment" rows="4" required></textarea>
+                  </div>
+                
                 <button class="button-footer" type="submit">Send</button>
+                </div>
+               
                 <div class="button-footer-container">
                         <button class="button-first-footer" type="button">lloydjefferson@gmail.com</button>
                         
@@ -23,5 +31,12 @@
             
             </form>
         </div>
+    </div>
+    <div class="modal-footer">
+          <div class="modal-content">
+              <span class="close">&times;</span>
+                <h3 class="footer-modal-title">Thank you for your interest in cooperation!</h3>
+                <p class="modal-message">The manager will contact you shortly to discuss further details and opportunities for cooperation. Please stay in touch.</p>
+          </div>
     </div>
 </footer>

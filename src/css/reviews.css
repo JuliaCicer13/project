@@ -39,8 +39,9 @@
     height: 48px;
 }
 .buttons-reviews {
-display: flex;
-justify-content: center;
+    margin-top: 32px;
+     display: flex;
+     justify-content: center;
 }
 .button-round{
     width: 68px;

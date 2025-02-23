@@ -28,6 +28,7 @@
     stroke-dashoffset: 500;
     animation: draw 2s linear infinite;
     margin-left: 1000px;
+    margin-bottom: 300px;
 }
 
 
@@ -42,13 +43,9 @@
 }
 
 
-
-
-
 .main-title {
     font-size: 90px;
     line-height: 90px;
-    align-items: center;
     text-transform: uppercase;
     font-weight: 500;
     color: #FAFAFA;
@@ -122,8 +119,8 @@
         justify-content: center;
     }
 
-    .title-container {
-        margin-left: 120px;
+    .main-title {
+        margin-left: 90px;
     }
 
     .list-link {
@@ -164,11 +161,7 @@
         padding-bottom: 187px;
     }
 
-    .title-container {
-        display: flex;
-        width: 1084px;
-        margin-left: 32px;
-    }
+ 
 
     .main-title {
         font-size: 90px;
@@ -262,6 +255,7 @@
         letter-spacing: 0.03em;
         text-transform: uppercase;
         padding-bottom: 212px;
+        margin-left: 34px;
     }
 
     .list-link {
@@ -336,9 +330,6 @@
         padding-bottom: 187px;
     }
 
-    .title-container {
-        width: 343px;
-    }
 
     .main-title {
         font-weight: 500;
@@ -346,6 +337,7 @@
         line-height: 100%;
         letter-spacing: 0.03em;
         text-transform: uppercase;
+        margin-left: 10px;
     }
 
     .list-link {
