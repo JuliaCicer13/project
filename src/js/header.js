@@ -50,3 +50,13 @@ document.addEventListener("DOMContentLoaded", () => {
         menu.style.display = "none";
     });
 });
+
+const myLink = document.createElement("a");
+myLink.href = "";
+const orderMyButton = document.querySelector('order-button');
+
+orderMyButton.addEventListener("click", getLink);
+function getLink(event) {
+    event.preventDefault();
+
+}

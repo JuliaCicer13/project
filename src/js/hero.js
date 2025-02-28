@@ -19,4 +19,24 @@ const createMarkUp = links => {
 }
 
 listLink.innerHTML = createMarkUp(links);
-  
+
+
+const buttonStivi =
+document.createElement("button");
+buttonStivi.classList.add('button-button') ;
+buttonStivi.style.display = 'block'
+buttonStivi.type = 'button';
+
+ const containerHero = document.querySelector('.hero-container');
+ containerHero.appendChild(buttonStivi) ;
+ 
+
+ buttonStivi.addEventListener("click", clickFunction);
+
+ function clickFunction(event) {
+    event.preventDefault();
+     const linkProject = document.createElement("a");
+     linkProject.href = "https://github.com/JuliaCicer13/project";
+     linkProject.classList.add('link-project');
+     linkProject.appendChild(buttonStivi);
+ }
