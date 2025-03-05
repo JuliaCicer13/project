@@ -52,11 +52,12 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 const myLink = document.createElement("a");
-myLink.href = "";
-const orderMyButton = document.querySelector('order-button');
+const orderMyButton = document.querySelector('.order-button');
 
 orderMyButton.addEventListener("click", getLink);
 function getLink(event) {
     event.preventDefault();
-
+    window.location.href =  "https://github.com/JuliaCicer13/project";
+    myLink.textContent = "Go to the project";
+    document.body.appendChild(myLink);
 }
